@@ -1,5 +1,6 @@
 # Golf Enterprise Website
 This is the website I created for Creating Web Application COS10009. This was also the one I used as a demo for Viettime Holdings website when I was the Web Delopment Assistant.
+The website was made entirely from scratch using HTML, CSS, and JavaScript.
  
 ## Screenshot
 ### Home Page
