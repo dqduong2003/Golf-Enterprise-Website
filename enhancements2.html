@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="home page">
+		<meta name="keywords" content ="home">
+		<meta name="author" content ="Daniel Dang">
+		<link rel="stylesheet" href="styles/style.css">
+		<link rel="shortcut icon" href="images/icon_logo.png" type="image/x-icon">
+		<title>Enhancements 2</title>
+		<script src="scripts/enhancements.js"></script>
+	</head>
+
+	<body id="enhancements2">
+		<header>
+      <a href="index.html"><img class="logo" src="images/logo_viet.png" alt="Viettime Technology Logo"/></a>
+      <nav>
+				<ul class="nav_links">
+					<li><a id="current_home" href="index.html">Home</a></li>
+	        <li><a id="current_job" href="jobs.html">Job Descriptions</a></li>
+	        <li><a id="current_app" href="apply.html">Application</a></li>
+	        <li><a id="current_about" href="about.html">My Details</a></li>
+					<li><a id="current_enhance" href="enhancements.html">Enhancements</a></li>
+	        <li><a id="current_enhance2" href="enhancements2.html">Enhancements 2</a></li>
+				</ul>
+      </nav>
+    </header>
+
+    <main id="enhance2">
+			<section class="all_enhancements">
+				<article>
+					<h1 id="js_title">JavaScript enhancements I've used</h1>
+				</article>
+				<article>
+					<h2>Highlight current page in Menu bar</h2>
+					<p>To easily navigate which page you are currently in, its title would be highlighted in the <a href="#header">Header</a> of every page. </p>
+					<p>To do this, I give the body of each page and the hyperlink to each a unique ID. Then I used If statements to connect the page with its corresponding title. </p>
+					<p>If the statement is <strong>true</strong>, it will change the color of the title.</p>
+          <br>
+				</article>
+
+				<article>
+					<h2>Scroll reveal effect</h2>
+					<p>When a user scrolls down, it will trigger each element in the page to reveal smoothly. This effect can be seen in <a href="index.html">Home</a> and <a href="about.html">My Details</a> pages.</p>
+					<p>First, I need to add a <strong>scroll</strong> event listener to trigger the <strong>reveal</strong> function.</p>
+					<p>Then, every element that has this scroll effect will be in multiple classes <em>(e.g. mission_container reveal)</em>, which indicates which reveal effect it will have.</p>
+          <p>I create some variables for window height, point to reveal, and use <strong>getBoundingClientRect()</strong> method to return the size of an element and its position relative to the viewport. When an element is triggered, <em>"active"</em> will be added to its class name.</p>
+          <p>All of these combined with <strong><em>transform: translate</em></strong> in CSS, I get the Scroll reveal effect.</p>
+          <br>
+				</article>
+
+			</section>
+    </main>
+		<footer id="footer">
+			<a href="index.html"><img class="logo" src="images/logo_viet.png" alt="Viettime Technology Logo"/></a>
+			<nav>
+				<ul class="nav_links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="jobs.html">Job Descriptions</a></li>
+					<li><a href="apply.html">Application</a></li>
+					<li><a href="about.html">My Details</a></li>
+					<li><a href="enhancements.html">Enhancements</a></li>
+          <li><a href="enhancements2.html">Enhancements 2</a></li>
+				</ul>
+			</nav>
+			<div class="contacts">
+				<h3>Contacts</h3>
+				<p>82 Nguyen Tuan Street, Thanh Xuan District, Hanoi, Vietnam</p>
+				<p>☎ +61 013528453</p>
+				<p>📧 mail_dont_exist@gmail.com</p>
+			</div>
+    </footer>
+	</body>
+</html>

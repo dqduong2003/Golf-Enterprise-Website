@@ -1,0 +1,1003 @@
+/*
+filename: Daniel Dang
+auhtor: Daniel Dang
+created: 19/8/2021
+last modified: 28/8/2021
+description: about.html, apply.html, index.html, jobs.html, enhancements.html
+*/
+
+/*import*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@500;700&family=Raleway:wght@400;700&display=swap');
+
+/*header*/
+header {
+  background-color: #24252A;
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+}
+header .logo {
+  width: 200px;
+}
+header li, header li a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+header .nav_links {
+  list-style: none;
+}
+header .nav_links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+header .nav_links li a {
+  transition: all 0.3s ease 0s
+}
+header .nav_links li a:hover {
+  color: #7FC8A9
+}
+
+/*footer*/
+footer {
+  background-color: #24252A;
+}
+footer li, footer li a, footer .contacts {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+  font-size: 0.9em
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10%;
+}
+footer .nav_links{
+  list-style: none;
+  font-size: 1.2em;
+  line-height: 1.4em
+}
+footer .nav_links li a:hover {
+  color: #7FC8A9
+}
+footer .contacts {
+}
+footer .logo {
+  width: 170px;
+}
+main {
+  background-color: #e6e6e6;
+}
+
+/*home page index.html*/
+#banner_container {
+  background-image: url("../images/banner_picture.jpg");
+  width: 100%;
+  height: 570px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#banner {
+  margin: auto;
+  width: 60%;
+  color: white;
+  text-align: center;
+  min-width: 420px;
+}
+#banner h1 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+#banner h2{
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+}
+#banner p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+.about_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 75px 15%;
+  background-color: #e6e6e6;
+}
+
+.about_us {
+  width: 40%;
+  height: 80%;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.2));
+  border-radius: 15px;
+  box-shadow: 6px 6px 25px rgba(127, 200, 169, 0.3);
+  padding: 10px 35px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-bottom-width: 0;
+  border-right-width: 0;
+  min-width: 250px;
+  padding-bottom: 20px;
+  margin-right: 5%;
+}
+
+#about_details {
+  font-family: "Raleway", sans-serif;
+  color: #1a1a1a;
+  font-size: 1.4em;
+  background: #50CB93;
+  padding: 1% 5%;
+  border-radius: 15px;
+  box-shadow: 6px 6px 25px rgba(122,122,122,0.3);
+}
+#about_details:hover {
+  background: linear-gradient(to left, #7be393, #7FC8A9);
+}
+#about_title {
+  background: linear-gradient(to right, #1E6F5C, #289672);
+  padding: 0.1px 15px;
+  width: 35%;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  text-align: center;
+  margin-top: 15px;
+  box-shadow: 6px 6px 25px rgba(122,122,122,0.3);
+  color: #ededed;
+  font-size: 1.1em;
+}
+#circle {
+  border-radius: 50%;
+  background: linear-gradient(to right bottom, #007563, #71EFA3);
+  width: 400px;
+  height: 400px;
+  position: relative;
+  bottom: 110%;
+  left: 12%;
+  z-index: -1;
+  transition: 0.7s ease-in;
+}
+#circle:hover {
+  background: linear-gradient(to left top, #007563, #71EFA3);
+}
+.manager_container {
+  width: 400px;
+  height: 400px;
+  z-index: 2;
+}
+#manager {
+  width: 400px;
+  border-radius: 50%;
+  z-index: 2;
+}
+.mission_container {
+  width: 100%;
+  color: #f2f2f2;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content:center;
+  display: flex;
+  margin-bottom: 75px;
+}
+#mission{
+  font-family: "Raleway", sans-serif;
+  text-align: justify;
+  font-size: 1.4em;
+  width: 93%;
+  height: 100%;
+  background-color: #5F7A61;
+  padding: 8px 2%;
+  border-radius: 15px;
+  box-shadow: 6px 6px 25px rgba(68,73,65, 0.3);
+}
+#mission h2{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.title_container {
+  align-items: center;
+  height: 12vh;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#values_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4em;
+  height: 85%;
+  width: 35%;
+  background:#444941;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  border-radius: 25px;
+  box-shadow: 6px 6px 25px rgba(68,73,65, 0.3);
+  color: #e6e6e6;
+  min-width: 250px;
+}
+.values_container {
+  width: 100%;
+  padding-bottom: 40px;
+
+}
+#values_detail {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 3%;
+  flex-wrap: wrap;
+}
+
+.values_content {
+  width: 22%;
+  height:45vh;
+  padding: 15px 10px;
+  margin: 10px 10px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 6px 6px 25px rgba(122,122,122,0.3);
+}
+#right {
+  background-image: url(../images/right_thing.jpg);
+  background-size: cover;
+  background-position: center;
+  min-width: 250px;
+  flex-grow: 1;
+}
+#relation {
+  background-image: url(../images/relationship.jpg);
+  background-size: cover;
+  background-position: center;
+  min-width: 250px;
+  flex-grow: 1;
+}
+#approach {
+  background-image: url(../images/approach.jpg);
+  background-size: cover;
+  background-position: center;
+  min-width: 250px;
+  flex-grow: 1;
+}
+#result {
+  background-image: url(../images/result.jpg);
+  background-size: cover;
+  background-position: center;
+  min-width: 250px;
+  flex-grow: 1;
+}
+.value_overlay {
+  text-align: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  background: rgba(16,23,26,0.85);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  border-radius: 15px;
+  transition: all 0.6s ease;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.value_overlay:hover {
+  opacity: 1
+}
+
+/* REVEAL ON SCROLL */
+.reveal {
+  position: relative;
+  transform: translateY(120px);
+  opacity: 0;
+  transition: all 1.7s ease;
+}
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.left {
+  position: relative;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: all 1.7s ease;
+}
+.left.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.right {
+  position: relative;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: all 1.8s ease;
+}
+.right.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+/*application apply.html*/
+#bg {
+  background: linear-gradient(to right top, #2d6a4f, #74c69d);
+  padding: 25px 0;
+}
+.a_form {
+  width: 45%;
+  height: 60%;
+  margin: auto;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
+  padding: 32px 30px;
+  border-radius: 15px;
+  font-family: "Raleway", sans-serif;
+  box-shadow: 6px 6px 25px rgba(122, 122, 122, 0.3);
+  border: 1.5px solid white;
+  border-bottom-width: 0;
+  border-right-width: 0;
+  min-width: 300px;
+}
+.a_form #form_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  font-weight: 700;
+  width: 70%;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin: auto;
+  border-radius: 30px;
+  color: white;
+  background: linear-gradient(to right, #8fd9b9, #558776);
+  margin-bottom: 1.1em;
+  min-width: 220px;
+}
+.a_form .input-box .details{
+  margin-bottom: 5px;
+  display: block;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1em;
+}
+.a_form .input-box input, #o_skill, .a_form .input-box select {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  border-bottom-width: 4px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  padding: 10px 10px;
+}
+.a_form .input-box input:focus, .a_form .input-box input:valid, .a_form .input-box select:focus {
+  border-color: #7FC8A9;
+}
+.gender{
+  display: block;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.gender label {
+  display: flex;
+}
+#gender_title, #skill_title, #state_title{
+  font-weight: 700;
+}
+#o_skill{
+  width: 100%;
+  height: 300px;
+}
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+}
+.button input[type = "submit"] {
+  font-family:"Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.4em;
+  border: 0;
+  text-align: center;
+  padding: 10px 35px;
+  color: white;
+  border-radius: 30px;
+  background-color: #52b788;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 30px;
+}
+.button input[type = "submit"]:hover {
+  background-color: #7FC8A9;
+  color: #444941;
+}
+.button input[type = "reset"] {
+  font-family:"Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.3em;
+  border: 0;
+  text-align: center;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 30px;
+  background-color: #0a3d36;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type = "reset"]:hover {
+  background-color: #24252A;
+  color: white;
+}
+.skill {
+  display: block;
+  font-size: 1.2em;
+}
+
+#pcode_err, #birth_err, #o_skill_err {
+  color: red;
+  font-style: italic;
+  font-family: "Arial", sans-serif;
+}
+
+/*about me about.html*/
+.main_part {
+  margin-top: -20px;
+  padding: 30px 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.hello_container {
+  margin-top: -9.5px;
+  width: 100%;
+  height: 90vh;
+  box-sizing: border-box;
+  padding: 10px 12%;
+  align-items: center;
+  background-image: url(images/about_banner.png);
+  background-position: bottom;
+  background-size: cover;
+}
+.hello_container img {
+  width: 400px;
+  border-radius: 50%;
+}
+.hello_container #my_image {
+  float: right;
+  margin-top: 12%;
+}
+#hello {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #629460;
+  width: 50%;
+  float: left;
+  margin-top: 14%;
+  padding-left: 5%;
+  box-sizing: border-box;
+}
+#hello #myname {
+  font-size: 4.4rem;
+  font-weight: 700;
+  color: #40916c;
+  margin: 0.2em 0;
+}
+#hello #hello_details {
+  font-family: "Raleway", sans-serif;
+  color:#595959
+}
+#hello #my_details {
+  background: #52b788;
+  width: 180px;
+  box-sizing: border-box;
+  padding: 10px 10px;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: 700;
+  box-shadow: 6px 6px 25px rgba(122, 122, 122, 0.3);
+}
+#hello #my_details a{
+  text-decoration: none;
+  color: white;
+}
+
+.about_me {
+  width: 95%;
+  min-height: 365px;
+  background: white;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 5px 3.5%;
+  box-shadow: 6px 6px 25px rgba(122, 122, 122, 0.5);
+  font-family: "Raleway",sans-serif;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  clear: both;
+}
+.about_me h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #081c15;
+}
+.about_me h1::after {
+  content:"";
+  position: relative;
+  right:185px;
+  top: 1.6rem;
+  width: 110px;
+  display: inline-block;
+  border-bottom: 4px solid #49a078;
+}
+.about_me #about_me_detail {
+  font-size: 1.2rem;
+  margin-top: 50px;
+}
+.about_me #about_me_detail a:link{
+  color: #1c7c54
+}
+
+.about_me #about_me_detail dt {
+  float: left;
+  clear: left;
+  margin-right: 8px;
+  width: 135px;
+}
+.about_me #about_me_detail dt, .about_me #about_me_detail dd {
+  padding: 0 0 1em 0;
+}
+.about_me #about_me_detail dd {
+  margin: 0 0 0 100px;
+}
+.about_me #about_me_detail p {
+  margin-top: -15px;
+}
+
+.my_study {
+  padding: 20px 12%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  clear: both;
+}
+.swin_photo img {
+  max-width: 420px;
+  border-radius: 12px;
+  box-shadow: 6px 6px 25px rgba(122, 122, 122, 0.7);
+}
+.my_study #course_name {
+  font-weight: 700;
+  color: #248277;
+}
+.my_study h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #081c15;
+}
+.my_study h1::after {
+  content:"";
+  position: relative;
+  right:170px;
+  top: 1.6rem;
+  width: 110px;
+  display: inline-block;
+  border-bottom: 4px solid #49a078;
+}
+#my_study_details {
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+  width: 50%;
+}
+#my_study_details h2{
+  font-size: 1.4rem;
+  clear: both;
+}
+#units dt{
+  margin-left: 25px;
+	padding: 10px 0;
+  padding-left: 40px;
+	list-style: none;
+	background-image: url("images/list__study.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 2rem;
+  float: left;
+  clear: left;
+  margin-right: 8px;
+  width: 280px;
+}
+#units dd:before {
+  content: ":";
+  margin-right: 10px;
+}
+#units dd {
+  padding: 0.6em 0 1em 0;
+  margin: 0 0 0 100px;
+  font-weight: 700;
+}
+#convenors dt {
+  float: left;
+  clear: left;
+  margin: 0;
+  margin-left: 25px;
+  width: 250px;
+  font-weight: 700;
+  padding-left: 100px;
+}
+#convenors dt, #convenors dd {
+  padding: 0 0 1em 0;
+}
+#convenors dd {
+  margin: 0 0 0 100px;
+}
+#convenors dt:before{
+  content: "▶";
+  margin-right: 8px;
+}
+.timetable {
+  padding: 20px 5%;
+  box-sizing: border-box;
+}
+.timetable h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #081c15;
+}
+.timetable h1::after {
+  content:"";
+  position: relative;
+  right:242px;
+  top: 1.6rem;
+  width: 120px;
+  display: inline-block;
+  border-bottom: 4px solid #49a078;
+}
+.timetable table{
+  width: 100%;
+  margin-top: 50px;
+  border: 2px double #1b4332;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+  background-color: #b7e4c7;
+}
+.timetable th, .timetable td {
+  border: 1px solid #1b4332;
+  padding: 10px 5px;
+  font-weight: 700;
+}
+.timetable th{
+  font-family: "Montserrat", sans-serif;
+  background-color: #1c7c54;
+  color: white;
+}
+.interest_title {
+  padding: 20px 5%;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+}
+.interest_title h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #081c15;
+}
+.interest_details {
+  margin-top: 50px;
+}
+.interest_title h1::after {
+  content:"";
+  position: relative;
+  right:205px;
+  top: 1.6rem;
+  width: 120px;
+  display: inline-block;
+  border-bottom: 4px solid #49a078;
+}
+#photo_grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-gap: 10px;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+#photo_grid img{
+  width:100%;
+}
+.item1 {
+  grid-area: 1/1/span 12/span 8;
+}
+.item2 {
+  grid-area: 1/9/span 6/span 9;
+}
+.item3 {
+  grid-area: 1/18/span 6/span 4;
+}
+.item4 {
+  grid-area: 7/9/span 6/span 4;
+}
+.item5 {
+  grid-area: 7/13/span 6/span 9;
+}
+#last_banner {
+  width: 100%;
+  height: 500px;
+  background-image: url(images/about_last_banner.png);
+  background-size: cover;
+  background-position: bottom;
+  margin-bottom: -30px;
+
+}
+
+
+/*job description jobs.html*/
+.side_bar {
+  float: right;
+  width: 25%;
+  background: linear-gradient(to right bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.3));
+  box-shadow: 6px 6px 25px rgba(122, 122, 122, 0.3);
+  margin-right: 3.5%;
+  margin-top: 30px;
+  border-radius: 12px;
+  min-width: 200px;
+  position: sticky;
+  top: 30px;
+  padding-bottom: 5px;
+  border: 2px solid black;
+}
+.side_title {
+  width: 100%;
+  background-image: url(../images/side.jpg);
+  background-size: cover;
+  border-radius: 12px;
+  background-position: center;
+}
+.side_title h1{
+  font-size: 2.4em;
+  line-height: 0.3em;
+}
+.side_details {
+  width: 90%;
+  margin: auto;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+}
+.side_details hr {
+  width: 90%
+}
+.apply_now {
+  width: 40%;
+  margin: auto;
+  background: #1E6F5C;
+  font-size: 1.1em;
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding: 0.2px 0;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+.apply_now:hover {
+  background: #52b788;
+  color: #081c15;
+}
+.side_bar a {
+  text-decoration: none;
+}
+#side_overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  border-radius: 12px;
+  color: white;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding: 15px 0;
+}
+.job {
+  width: 65%;
+  margin-left: 3%;
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 6px 6px 25px rgba(122, 122, 122, 0.3);
+  background: linear-gradient(to right bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.3));
+  font-family: "Raleway", sans-serif;
+  min-width: 400px;
+  padding-bottom: 10px;
+}
+.job_details {
+  width: 95%;
+  margin: auto;
+  padding: 1px 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.job_details h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8em;
+}
+.job_details p, .job_details li, .job_details ol{
+  font-size: 1.2em;
+}
+.job_details p {
+  margin-left: 20px;
+}
+.success ul li {
+  font-style: italic;
+}
+
+.salary {
+  font-weight: 700;
+  color: #08a880;
+  font-size: 1.5em;
+}
+.reference {
+  font-size: 0.5em;
+  font-style: italic;
+  text-align: right;
+}
+#apply_cloud {
+  width: 50%;
+  margin: auto;
+  background: #14ba90;
+  font-size: 1.2em;
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding: 0.1px 0;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+#apply_cloud:hover {
+  background: #52b788;
+  color: #081c15;
+}
+#apply_cloud a {
+  text-decoration: none;
+  color: white;
+}
+#apply_software {
+  width: 50%;
+  margin: auto;
+  background: #5F7A61;
+  font-size: 1.2em;
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding: 0.1px 0;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+#apply_software:hover {
+  background: green;
+  color: #081c15;
+}
+#apply_software a {
+  text-decoration: none;
+  color: white;
+}
+.job_title {
+  width: 100%;
+  background-image: url(../images/cloud.jpg);
+  background-size: cover;
+  border-radius: 12px;
+  display: flex;
+
+}
+.job_title_overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  border-radius: 12px;
+  color: white;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.8em;
+  text-align: center;
+  padding: 15px 0;
+}
+.job_title_2{
+  width: 100%;
+  background-image: url(../images/software.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  display: flex;
+}
+#re_number {
+  background: #14ba90;
+  font-size: 0.8em;
+}
+#r_number_2 {
+  background: #5F7A61;
+  font-size: 0.8em;
+}
+
+/* enhancements enhancements.html */
+#enhance {
+  padding: 25px 0;
+  background-image: url(images/about_banner.png);
+}
+#enhance2 {
+  padding: 25px 0;
+  background-image: url(images/about_banner2.png);
+}
+#js_title {
+  color: #ffc300;
+}
+.all_enhancements {
+  padding: 15px 5% 35px 5%;
+  width: 78%;
+  margin: auto;
+  background-color: rgba(250,250,250,0.8);
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  box-shadow: 6px 6px 25px rgba(122, 122, 122, 0.3);
+}
+.all_enhancements h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.9rem;
+  color: #40916c;
+  text-align: center;
+}
+.all_enhancements h2 {
+  color: #081c15;
+  margin-bottom: -0.4rem;
+}
+.all_enhancements h2::after {
+  content:"";
+  position: absolute;
+  display: inline-block;
+  border-bottom: 4px solid #49a078;
+}
+.all_enhancements p {
+  margin-bottom: -0.5rem;
+}
+.all_enhancements a:link {
+  color: #1c7c54;
+  font-weight: 700;
+}
